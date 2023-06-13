@@ -8,6 +8,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -15,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class TestEmployeesModule {
 
-    List<Employee> DB1 = new ArrayList<>();
+    List<Employee> DB1 = new LinkedList<>();
     GenericRepository<Employee> EmployeeRepository1 = new GenericRepository<>(DB1);
 
     @Test
